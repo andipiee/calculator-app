@@ -1,0 +1,65 @@
+*,*::after,*::before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+    background: linear-gradient(to right bottom, violet, aqua);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.calc-container{
+    width: 400px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.calc-container table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.calc-container table tr td,
+.calc-container table tr th{
+    width: 25%;
+    border: 5px solid transparent;
+    background:rgba(255, 255, 255, 0.3);
+    background-clip: padding-box;
+    padding: 20px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+
+.calc-container table tr th{
+    background: rgba(255, 255, 255, 0.8);
+    text-align: right;
+    background-clip: padding-box;
+    font-size: 30px;
+    padding: 25px 10px;
+    color: #444;
+    cursor: default;
+}
+
+.calc-container table tr td:hover{
+    background: rgba(255, 255, 255, 0.7);
+    background-clip: padding-box;
+    color: #666;
+}
+
+.symble{
+    pointer-events: none;
+}
